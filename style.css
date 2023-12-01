@@ -1,0 +1,790 @@
+/* !!!VAZNA NAPOMENA!!! Sajt je radjen na laptopu rezolucije 1920x1080 (fhd) i sa scale 125%, jer je tako bio fabricki namesten, najbolje bi bilo pregledati ga tako, */
+	/* ukoliko je moguce, hvala. */
+*{
+	margin:0px;
+	padding:0px;
+	font-family:Noto Sans Glagolitic, sans-serif;
+	box-sizing:border-box;
+	
+}
+/* NAPOMENA! Tokom kreiranja sajta promenio se redosled postavljanja elemenata.  */
+/* Na primer pre header1 koji se nalazi na manga.html sadrzaj je trebao da ide na index.html */
+/* kasnije sam odlucio da sve to svrstam u manga.html zato mozda raspored css-a izleda malo lose.  */
+#header{
+	width:100%;
+	height:760px;
+	background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../slike/pozadina.jpg");
+	background-size:cover;
+	background-position:center;
+}
+#navigacija{
+	width: 100%;
+    height: 10px;
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    background-color: #010101;
+    position: relative;
+}
+#navigacija span{
+	position:absolute;
+	width:95px;
+	height:30px;
+	background:linear-gradient(#9c4045,#9f4045);
+	z-index:-1;
+	top:-7px;
+	left:-4px;
+	border-radius:10px;
+	transition:0.7s;
+}
+#navigacija li:nth-child(1):hover~span{
+	left:-4px;
+}
+#navigacija	li:nth-child(2):hover~span{
+	left:95px;
+}
+#navigacija	li:nth-child(3):hover~span{
+	left:210px;
+}
+#navigacija	li:nth-child(4):hover~span{
+	left:335px;
+}
+#navigacija	li:nth-child(5):hover~span{
+	left:445px;
+}
+#navigacija ul{
+	margin-right:230px;
+}
+.logo{
+	width:244px;
+	cursor:pointer;
+	margin:0px 20px;
+	z-index:2;
+	margin-left:240px;
+}
+#navigacija ul li{
+	list-style:none;
+	display:inline-block;
+	margin:0 20px;
+	position:relative;
+	
+}
+.senka { 
+	width:100%; 
+	height:106%; 
+	background: rgba(0,0,0,0.75); 
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	z-index:1;
+}
+#navigacija ul li a{
+	text-decoration:none;
+	color:#fff;
+	text-transform:uppercase;
+	transition:0.5s;
+}
+#navigacija ul{
+	position:relative;
+	
+}
+.header-tekst{
+	width:100%;
+	position:absolute;
+	top:55%;
+	text-align:center;
+	color:#fff;
+	z-index:+1;
+	
+}
+.header-tekst h1{
+	font-size:45px;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+	
+}
+.header-tekst p{
+	font-size:25px;
+	margin-top:10px;
+	font-weight:100;
+	line-height:25px;
+}
+.boldiranje{
+	font-size:90px;
+	color:#9c4045;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+.header-dugme button{
+	width:300px;
+	height:90px;
+	margin-top:15px;
+	border:2px solid rgba(0,0,0,0.75);
+	border-radius: 25px;
+	font-size:25px;
+	font-weight:200px;
+	background-color:#9c4045;
+	
+	
+}
+.header-dugme button a{
+	color:wheat;
+	text-decoration:none;
+}
+#preporuke-blok{
+	width:100%;
+	height:487px;
+	background-color:#313131;
+	position:relative;
+	background-image:url("../slike/pozadina4.jpg");
+	background-position:0px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#one-piece{
+	width:75%;
+	height:66%;
+	position:absolute;
+	display: flex;
+    justify-content: center;
+	margin-top: 105px;
+	z-index:1;
+	
+}
+.boldiranje1{
+	font-size:44px;
+	color:#fff;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+.op-slika{
+	height:100%;
+	margin-left:170px;
+	border: 1px solid #313131;
+    border-radius: 28px;
+}
+.kontent-tekst{
+	width:48%;
+	margin-left:30px;
+	color:#000;
+	text-align:center;
+	position:relative;
+	
+}
+.kontent-tekst p{
+	font-size:27px;
+	text-align:justify;
+	color:white;
+	background-color:#313131;
+	border:1px solid #313131;
+	border-radius:20px;
+}
+#preporuke-blok2{
+	width:100%;
+	height:499px;
+	background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../slike/gojo.jpg");
+	background-size:cover;
+}
+#jujutsu{
+	width:75%;
+	height:50%;
+	position:absolute;
+	display: flex;
+    justify-content: center;
+	margin-top: 35px;
+    margin-left: 160px;
+	
+}
+.jujutsu-slika{
+	height:100%;
+	margin-left:85px;	
+	margin-top:30px;
+	    border: 2px solid black
+}
+#jujutsu p{
+	width:59%;
+	color:black;
+	margin-left:30px;	
+	margin-top: 30px;
+	font-size:27px;
+	text-align:justify;
+	background-color:#808080;
+	text-align:justify;
+	
+}
+#footer{
+	width:100%;
+	height:220px;
+	background-color:#000;
+	display:flex;
+	flex-direction: column;
+    align-items: center;
+}
+.header-logo {
+	width:250px;
+	display:flex;
+	align-items:center;
+}
+#footer-kontakt p{
+	margin-top:10px;
+}
+#footer-kontakt a{
+	text-decoration:none;
+	color:white;
+	
+}
+#footer-kontakt p{
+	color:white;
+}
+#header1{
+	width:100%;
+	height:730px;
+	background-image:url("../slike/cb2.jpg");
+	background-size:cover;
+}
+#header1-kontent{
+	width:85%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position:relative;
+	top:80px;
+	left:-20px;
+	
+	
+}
+#header1-kontent img{
+	cursor: pointer;
+	width:300px;
+	border:;
+	border-radius:24px;
+	margin-right:30px;
+}
+#header1-kontent img:hover{
+	transform:scale(1.01);
+	
+	
+}
+#header1-kontent h1{
+	top:-20px;
+	position:relative;
+	font-size:35px;
+}
+#header1-kontent p{
+	color:white;
+	top:30px;
+	position:relative;
+	font-size:23px;
+}
+#main{
+	width:100%
+	
+}
+#blue-lock{
+	height:499px;
+	width:100%;
+	background-image:linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.75)),url("../slike/blue.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:5px;
+	
+	
+}
+#blue-lock-kontent{
+	width:60%;
+	height:80%;
+	position:relative;
+	display:flex;
+	align-items:center;
+	top:60px;
+	left:245px;
+	justify-content:space-between;
+}
+#blue-lock-kontent img{
+	height:80%;
+	
+}
+#blue-lock-kontent p{
+	font-family:Noto Sans Glagolitic;
+	font-size:29px;
+	margin-left:30px;
+	background-color:#808080;
+	text-align:justify;
+}
+#chainsaw{
+	height:499px;
+	width:100%;
+	background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url("../slike/chainsaw.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	
+	
+}
+#chainsaw-kontent{
+	width:65%;
+	height:80%;
+	position:relative;
+	display:flex;
+	align-items:center;
+	top:60px;
+	left:245px;
+	justify-content:space-between;
+}
+#chainsaw-kontent img{
+	height:85%;
+	border:1px solid;
+	border-radius:25px;
+	
+}
+#chainsaw-kontent p{
+	font-family:Noto Sans Glagolitic;
+	font-size:29px;
+	margin-left:30px;
+	background-color:#808080;
+	text-align:justify;
+}
+#dragon{
+	height:499px;
+	width:100%;
+	background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url("../slike/dbz.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	
+	
+}
+#dragon-kontent{
+	width:65%;
+	height:80%;
+	position:relative;
+	display:flex;
+	align-items:center;
+	top:60px;
+	left:245px;
+	justify-content:space-between;
+}
+#dragon-kontent img{
+	height:85%;
+	border:1px solid;
+	border-radius:25px;
+	
+}
+#dragon-kontent p{
+	font-family:Noto Sans Glagolitic;
+	font-size:29px;
+	margin-left:30px;
+	background-color:#808080;
+	text-align:justify;
+}
+#revengers{
+	height:670px;
+	width:100%;
+	background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.73)),
+	url("../slike/revengers2.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+	z-index:1;
+	
+	
+}
+#revengers-kontent{
+	width:65%;
+	height:80%;
+	position:relative;
+	display:flex;
+	align-items:center;
+	top:60px;
+	left:245px;
+	justify-content:space-between;
+}
+#revengers-kontent img{
+	width:22%;
+	position:relative;
+	border:2px solid;
+	border-radius:25px;
+	
+}
+#revengers-kontent p{
+	font-family:Noto Sans Glagolitic;
+	font-size:29px;
+	margin-left:30px;
+	background-color:#808080;
+	text-align:justify;
+	padding:15px;
+	border-radius:25px;
+}
+#main1{
+	width:100%;
+	height:720px;
+	position:relative;
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.75)),url("../slike/library.jpg");
+	background-size:cover;
+	background-position:center;
+}
+#main1-kontent{
+	width:100%;
+	height:100%;
+	position:absolute;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+.manga-kontent{
+	width:30%;
+	height:80%;
+	display: flex;
+	flex-direction:column;
+}
+.manga-kontent a{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	text-decoration:none;
+}
+.manga-kontent img{
+	width:300px;
+	height:443px;
+	border:1px solid black;
+	border-radius:25px;
+	transition:0.8s;
+}
+.manga-kontent img:hover{
+	width:340px;
+	height:483px;
+	border:1px solid black;
+	border-radius:25px;
+}
+.manga-kontent-dugme button{
+	width:250px;
+	height:50px;
+	cursor:pointer;
+	top:15px;
+	position:relative;
+	border-radius:25px;
+	background-color:#a0a0a0;
+	font-size:21px;
+	text-decoration:none;
+}
+#main2{
+	width:100%;
+	height:720px;
+	position:relative;
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.75)),url("../slike/library2.jpg");
+	background-size:cover;
+	background-position:center;
+}
+#main3{
+	width:100%;
+	height:720px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-image:linear-gradient(rgba(0,0,0,0.7),#3551b5), url("../slike/pozadina5.jpg");
+	background-size:cover;
+	background-position:center;
+}
+#about-me{
+	width:100%;
+	height:430px;
+	position:relative;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	top:-50px;
+}
+#about-me-slika img{
+	width:350px;
+	height:420px;
+	margin:15px 15px;
+	border-radius:20px;
+	border:2px solid #;
+	
+	
+}
+#about-me-tekst{
+	width:600px;
+	height:400px;
+	margin:15px 15px;
+	font-size:25px;
+	text-align: justify;
+	color:white;
+	
+}
+#about-me-tekst p{
+	background-color:#000634;
+	font-size:25px;
+	border-radius:25px;
+	padding:10px 10px;
+	font-family:Noto Sans Glagolitic;
+}
+.boldiranje2{
+	font-size:50px;
+	color:#white;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E85FBC;
+	font-family:Noto Sans Glagolitic;
+}
+#header4{
+	width:100%;
+	height:760px;
+	background-image:url("../slike/pozadina4.jpg");
+	background-size:cover;
+	background-position:center;
+}
+#contact-main{
+	width:100%;
+	height:637px;
+	background-image:linear-gradient(rgba(0,0,0,0.7),#3551b5), url("../slike/mapa.png");
+	background-position:left;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+#contact-blok{
+	width:100%;
+	background-position:center;
+	background-size:cover;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+#contact{
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-evenly;
+}
+#location{
+	width: 24%;
+    height: 575px;
+    display: flex;
+    font-family: Noto Sans Glagolitic;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+	
+}
+#location h2{
+	font-size:32px;
+	margin:10px;
+	
+}
+#location p{
+	margin:10px;
+	font-size:20px;
+}
+#location iframe{
+	border-radius:25px;
+	width:290px;
+	height:290px;
+}
+#contact-forma{
+	width:30%;
+	height:100%;
+
+}
+#input{
+	border-radius:25px;
+}
+.input-grupa{
+	width:100%;
+	margin-bottom:30px;
+	position:relative;	
+}
+input, textarea{
+	width:100%;
+	padding:10px;
+	outline:0;
+	top:0;
+	left:0;
+	border:1px solid #fff;
+	color:#fff;
+	background:transparent;
+	font-size:15px;
+	
+}
+label{
+	height:100px;
+	position:absolute;
+	left:0;
+	top:0;
+	padding:10px;
+	color:#fff;
+	cursor:text;
+	transition:0.2s;
+	
+}
+#input button{
+	width:100%;
+	padding:10px 0px;
+	color:#fff;
+	outline:none;
+	background:transparent;
+	border:1px solid #fff;
+	cursor:pointer;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+	top:-35px;
+	font-size:15px;
+}
+#home-kontent{
+	width:100%;
+	height:730px;  
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.75)),url("../slike/home-slika.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:white;
+	position:relative;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:;
+	
+}
+#cilj{
+	width:28%;
+	height:100px;
+	font-size:40px;
+	text-align:center;
+	top:30px;
+	position:absolute;
+}
+#cilj h2{
+	font-family:Noto Sans Glagolitic;
+	background-color:#000;
+	border-radius:25px;
+	color:#9c4045;
+}
+#cilj-kontent{
+	width:70%;
+	height:60%;
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	position:relative;
+}
+#cilj-kontent img{
+	width:30%;
+	margin-right:30px;
+	border-radius:29px;
+	
+	
+}
+#cilj-kontent p{
+	font-size:25px;
+	font-family:Noto Sans Glagolitic;
+	text-align:center;
+	background-color:rgba(0,0,0,0.9);
+	line-height:1.5;
+	border-radius:20px;
+}
+#manga-fusion{
+	font-size:27px;
+	
+}
+.icons{
+	display:flex;
+	justify-content:center;
+}
+.icons a{
+	text-decoration:none;
+	padding:10px;
+	background-color:white;
+	margin:20px;
+	border-radius:50%;
+}
+.icons a i{
+	font-size:22px;
+	color:black;
+	opacity:0.9;
+}
+.icons a:hover{
+	background-color:#111;
+	transition:0.5s;
+}
+.icons a:hover i{
+	color:white;
+	transition:0.5s;
+
+}
+.footer-nav ul{
+	display:flex;
+	justify-content:center;
+}
+.footer-nav ul li a{
+	color:white;
+	margin:20px;
+	text-decoration:none;
+	font-size:20px;
+	opacity:0.6;
+	transition:0.5s;
+}
+.footer-nav ul li a:hover{
+	opacity:1;
+	font-size:21px;
+}
+.footer-copyright{
+	display:flex;
+	justify-content:center;
+}
+.copyright{
+	text-transform:uppercase;
+	opacity:0.8;
+}
+.okvir{
+	background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5));
+}
+.okvir-kontent {
+    overflow: hidden;
+    margin: 10px;
+}
+.box {
+    float: left;
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+}
+.boxInner {
+	position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+    }
+.boxInner img {
+    width: 100%;
+}
+.boxInner .titleBox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -50px;
+    background: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+section.okvir .boxInner:hover .titleBox, section.touch .boxInner.touchFocus .titleBox {
+    margin-bottom: 0;
+}
+

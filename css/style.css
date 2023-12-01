@@ -11,7 +11,7 @@
 #header{
 	width:100%;
 	height:760px;
-	background-image:url("../slike/pozadina.jpg");
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../slike/pozadina.jpg);
 	background-size:cover;
 	background-position:center;
 }

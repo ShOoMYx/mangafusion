@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>MangaFusion</title>
+  <link>https://shoomyx.github.io/mangafusion/index.html</link>
+  <description>Looking for manga to read? Check our selection.</description>
+  <item>
+    <title>MangaFusion</title>
+    <link>https://shoomyx.github.io/mangafusion/manga.html</link>
+    <description>Manga library.</description>
+  </item>
+  <item>
+    <title>XML Tutorial</title>
+    <link>https://shoomyx.github.io/mangafusion/about.html</link>
+    <description>About me.</description>
+  </item>
+</channel>
+
+</rss>
